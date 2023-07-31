@@ -16,7 +16,7 @@ function onDeviceReady() {
   const {store, ProductType, Platform} = CdvPurchase;
   refreshUI();
   store.register([{
-    type: CdvPurchase.CONSUMABLE,
+    type: CdvPurchase.ProductType.CONSUMABLE,
     id: 'my_product',
     platform: Platform.TEST,
   ]});
